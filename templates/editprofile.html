@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EDIT PROFILE</title>
+    <STYLE>
+        h1{
+    color:white;
+     text-align: center;
+    }
+ body{
+   background-image :url("https://wallpapercave.com/wp/wp2639558.jpg");
+    font-size : 20px;
+}
+
+ form{
+        background-color: #666;
+        font-family:sans-serif;
+        font-size=10px;
+        text-align:center
+        width: 1px;
+        height: 500px;
+        padding: 50px;
+        border: 1px solid blue;
+         box-sizing: border-box;
+         margin-top: 70px;
+  margin-bottom: 70px;
+  margin-right: 300px;
+  margin-left: 300px;
+  opacity:.6
+        }
+
+
+    </STYLE>
+</head>
+<body>
+ <a href="{% url 'myprofile' %}">Go Back</a>
+<h1> EDIT PROFILE</h1>
+<center>
+<form method="post" action="">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" href="{% url 'myprofile' %}" value="submit">
+
+</form>
+
+</body>
+</center>
+</html>

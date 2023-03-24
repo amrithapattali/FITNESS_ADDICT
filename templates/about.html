@@ -1,0 +1,102 @@
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Contact Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            background: #f2f2f2;
+        }
+        .container-fluid {
+            padding: 100px;
+            padding-top: 50px;
+        }
+        .navbar {
+            padding: 20px;
+            background: #00458a;
+        }
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: #f2f2f2;
+            text-decoration: none;
+        }
+        .navbar-brand:hover {
+            background-color: transparent;
+            color: #f2f2f2;
+        }
+        .navbar-brand img {
+            margin-right: 0.5rem;
+            border-radius: 50px;
+        }
+
+    </style>
+</head>
+
+
+<nav class="navbar">
+    <p class="navbar-brand" id="gym">
+        FITNESS ADDICT
+    </p>
+    <div class="ml-auto" style="margin-left: auto;">
+        <a class="header-link" href="{% url 'home' %}">Home</a></li>
+        <a class="header-link" href="{% url 'contact' %}">Contact</a>
+        <a class="header-link" href="{% url 'about' %}">About</a>
+    </div>
+
+
+</nav>
+
+<div class="container">
+    <h2 class="text-center text-primary font-weight-bold mt-5">About Us</h2>
+    <div class="row mt-5">
+        <div class="col-sm-4 text-center">
+
+        </div>
+        <center>
+            <div class="col-sm-8 text-center mt-5">
+                <b>The objective of the Gym Management System is to provide a system which handles the information of
+                    the people coming into the gym and maintaining their health care. It takes care of all their health
+                    information. It also maintains the people's attendance, gym records.</b>
+            </div>
+        </div>
+</div>
+</center>
+
+<footer>
+<div class="footer">
+    <center>
+        <br><h5>Follow us</h5>
+        <div class="footer-social">
+            <a href="https://www.facebook.com/"><img src="https://cdn-icons-png.flaticon.com/512/2504/2504903.png"
+                                                     width="30" height="30"></a>
+            <a href="https://www.instagram.com/"><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/1025px-Instagram-Icon.png"
+                    width="30" height="30"></a>
+            <a href="https://in.linkedin.com/"><img
+                    src="https://tse1.mm.bing.net/th?id=OIP.waOtRAV99hCXTCS_RvbK6QHaGp&pid=Api&P=0" width="30"
+                    height="30"></a>
+        </div>
+
+</div>
+
+
+
+
+    <center>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; 2023 Fitness Addict
+
+                </div>
+            </div>
+        </div>
+
+    </center>
+</footer>
+</html>

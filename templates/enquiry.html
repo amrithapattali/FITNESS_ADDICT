@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TODO APP</title>
+    <script src="https://kit.fontawesome.com/e08ada629c.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    h1{
+     color:black;
+     text-align: center;
+  }
+
+table{
+ opacity: .8;
+      background-color:white;
+      width: 900px;
+      border: 2px solid green;
+      padding: 50px;
+      margin: 30px;
+      line-height: 3.5;
+      font-size: 17px;
+      margin-top: 40px;
+      margin-bottom: 70px;
+      margin-right: 300px;
+      margin-left: 200px;
+      text-decoration: none;
+     }
+body{
+background-image: url('https://wallpapercave.com/wp/wp2639558.jpg');
+font-size : 20px;
+font-color: black;
+}
+h1{
+    color: white;
+}
+
+.item{
+ text-decoration: none;
+}
+#enq{
+color: white;
+}
+</style>
+<body>
+
+
+
+         <a href ="{% url 'home' %}">Go back</a>
+    <div class="container">
+
+</div>
+<h1> ENQUIRIES</h1>
+<center>
+<form method="post" action="" id="enq">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" href="{% url 'home' %}" value="submit">
+
+</form>
+</body>
+</html>
